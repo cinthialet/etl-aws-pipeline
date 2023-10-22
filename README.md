@@ -6,7 +6,7 @@ Este projeto consiste em desenvolver uma pipeline ETL na AWS para preparar um co
 
 ## Framework de Solução
 
-### 1. Entendimento do Problema [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
+### 1. Entendimento do Problema - [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
 
 **Objetivo:** A pedido de um Cientista de Dados, o objetivo é desenvolver um conjunto de dados que inclua determinadas informações para o modelo de machine learning que será construído.
 
