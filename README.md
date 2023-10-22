@@ -8,19 +8,7 @@ Este projeto consiste em desenvolver uma pipeline ETL na AWS para preparar um co
 
 ### 1. Entendimento do Problema [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
 
-**Objetivo:** A pedido de um Cientista de Dados, o objetivo é desenvolver um conjunto de dados que inclua:
-
-- ID do Cliente
-- Gênero
-- Senioridade
-- Dependentes
-- Parceiro
-- **Classificação do Cliente:**
-  - New: Até 6 meses de contratação.
-  - Bronze: Mais de 6 e até 12 meses.
-  - Silver: Mais de 12 até 36 meses.
-  - Gold: Mais de 36 até 60 meses.
-  - Platinum: Acima de 60 meses.
+**Objetivo:** A pedido de um Cientista de Dados, o objetivo é desenvolver um conjunto de dados que inclua determinadas informações para o modelo de machine learning que será construído.
 
 > A pipeline deve ser feita em cloud AWS,com execução manual e o destino dos dados é o Redshift
 
@@ -95,13 +83,12 @@ O CloudWatch criará automaticamente grupos de logs para o job do AWS Glue. Have
 5. Em propriedades avançadas:
     - Defina o nome do script como `transformacao-pipeline-etl.py`.
     - Adicione os parâmetros do job para conexão com o Redshift, para que os dados sensíveis não estejam no código:
-        - --REDSHIFT_HOST
-        - --REDSHIFT_DBNAME
-        - --REDSHIFT_PORT
-        - --REDSHIFT_USER
-        - --REDSHIFT_PASSWORD
-6. Execute o job manualmente. O output esperado é: logs publicados no CloudWatch, criação da tabela `dados_finais` no Redshift e inserção dos dados na tabela.
+![Parametros Glue Job](https://github.com/cinthialet/etl-aws-pipeline/blob/main/img/glue-parameters.png)
 
+6. Execute o job manualmente. O output esperado é: logs publicados no CloudWatch, criação da tabela `dados_finais` no Redshift e inserção dos dados na tabela.
+![Output Logs](https://github.com/cinthialet/etl-aws-pipeline/blob/main/img/cloudwatch-result.png)
+![Tabela Redshift](https://github.com/cinthialet/etl-aws-pipeline/blob/main/img/redshift-result.png) 
+ 
 ## Bibliotecas Utilizadas
 
 - **boto3**: SDK da Amazon para Python que manipula recursos da AWS.
