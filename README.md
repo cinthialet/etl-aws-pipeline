@@ -65,7 +65,7 @@ Testes end-to-end para garantir que a pipeline está funcionando corretamente e 
 
 Esta arquitetura é projetada para extrair, transformar e carregar dados usando os serviços AWS, incluindo Amazon S3, AWS Glue, Amazon Redshift e Amazon CloudWatch.
 
-![Arquitetura AWS ETL Pipeline](URL_DA_IMAGEM)
+![Arquitetura AWS ETL Pipeline](https://github.com/cinthialet/etl-aws-pipeline/blob/main/arquitetura%20aws.png?raw=true)
 
 ## Descrição da Arquitetura:
 
