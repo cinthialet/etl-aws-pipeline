@@ -29,23 +29,23 @@ Este projeto consiste em desenvolver uma pipeline ETL na AWS para preparar um co
 
 Análise exploratória dos dados para compreender as características, distribuições e possíveis desafios associados ao conjunto de dados.
 
-### 3. Decomposição do Problema [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
+### 3. Decomposição do Problema - [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
 
 Identificar e dividir as tarefas em demandas menores para simplificar a implementação (Demandas 1-4)
 
-### 4. Realização das Transformações [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
+### 4. Realização das Transformações - [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
 
 Aplicar as transformações necessárias nos dados para obter a estrutura desejada.
 
-### 5. Script para o Job do Glue [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
+### 5. Script para o Job do Glue - [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
 
 Desenvolvimento do script Python para o job do AWS Glue, que será responsável pelo processo ETL.
 
-### 6. Criação dos Recursos na AWS [AWS]
+### 6. Criação dos Recursos na AWS - [AWS](https://github.com/cinthialet/etl-aws-pipeline/blob/main/arquitetura%20aws.png)
 
 Configuração dos recursos na AWS necessários para a execução da pipeline.
 
-### 7. Teste da Solução [AWS][Vídeo](link-video)
+### 7. Teste da Solução - [Vídeo](link-video)
 
 Testes end-to-end para garantir que a pipeline está funcionando corretamente e os dados são transformados e armazenados conforme esperado no Amazon Redshift.
 
