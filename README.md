@@ -24,7 +24,7 @@ Este projeto consiste em desenvolver uma pipeline ETL na AWS para preparar um co
 
 > A pipeline deve ser feita em cloud AWS,com execução manual e o destino dos dados é o Redshift
 
-### 2. Entendimento dos Dados [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
+### 2. Entendimento dos Dados - [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
 [**Dados Originais**](https://github.com/cinthialet/etl-aws-pipeline/blob/main/WA_Fn-UseC_-Telco-Customer-Churn.csv)
 
 Análise exploratória dos dados para compreender as características, distribuições e possíveis desafios associados ao conjunto de dados.
