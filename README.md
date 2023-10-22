@@ -1,4 +1,4 @@
-# Projeto ETL na AWS para Criação de Conjunto de Dados
+# Projeto ETL Pipeline na AWS para Criação de Conjunto de Dados
 
 ## Visão Geral
 
@@ -6,7 +6,7 @@ Este projeto consiste em desenvolver uma pipeline ETL na AWS para preparar um co
 
 ## Framework de Solução
 
-### 1. Entendimento do Problema
+### 1. Entendimento do Problema [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
 
 **Objetivo:** A pedido de um Cientista de Dados, o objetivo é desenvolver um conjunto de dados que inclua:
 
@@ -24,42 +24,30 @@ Este projeto consiste em desenvolver uma pipeline ETL na AWS para preparar um co
 
 > A pipeline deve ser feita em cloud AWS,com execução manual e o destino dos dados é o Redshift
 
-### 2. Entendimento dos Dados
+### 2. Entendimento dos Dados [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
+[**Dados Originais**](https://github.com/cinthialet/etl-aws-pipeline/blob/main/WA_Fn-UseC_-Telco-Customer-Churn.csv)
 
 Análise exploratória dos dados para compreender as características, distribuições e possíveis desafios associados ao conjunto de dados.
 
-### 3. Decomposição do Problema
+### 3. Decomposição do Problema [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
 
-Identificar e dividir as tarefas em demandas menores para simplificar a implementação.
+Identificar e dividir as tarefas em demandas menores para simplificar a implementação (Demandas 1-4)
 
-### 4. Realização das Transformações
+### 4. Realização das Transformações [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
 
 Aplicar as transformações necessárias nos dados para obter a estrutura desejada.
 
-### 5. Script para o Job do Glue
+### 5. Script para o Job do Glue [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
 
 Desenvolvimento do script Python para o job do AWS Glue, que será responsável pelo processo ETL.
 
-### 6. Criação dos Recursos na AWS
+### 6. Criação dos Recursos na AWS [AWS]
 
 Configuração dos recursos na AWS necessários para a execução da pipeline.
 
-### 7. Teste da Solução
+### 7. Teste da Solução [AWS][Vídeo](link-video)
 
 Testes end-to-end para garantir que a pipeline está funcionando corretamente e os dados são transformados e armazenados conforme esperado no Amazon Redshift.
-
-## Bibliotecas Utilizadas
-
-- **boto3**: SDK da Amazon para Python que manipula recursos da AWS.
-  
-- **BytesIO (da biblioteca io)**: Interface para sequências de bytes que facilita manipulação de arquivos do S3 como arquivos em memória.
-
-- **psycopg2**: Biblioteca para conexão com PostgreSQL que permite interação com instâncias Redshift.
-  
-- **sys**: Biblioteca embutida do Python para interagir com o interpretador e passar argumentos de linha de comando.
-  
-- **getResolvedOptions (da biblioteca awsglue.utils)**: Função do SDK do AWS Glue que recupera parâmetros de um GlueJob.
-
 
 # Arquitetura AWS para ETL Pipeline
 
@@ -113,3 +101,15 @@ O CloudWatch criará automaticamente grupos de logs para o job do AWS Glue. Have
         - --REDSHIFT_USER
         - --REDSHIFT_PASSWORD
 6. Execute o job manualmente. O output esperado é: logs publicados no CloudWatch, criação da tabela `dados_finais` no Redshift e inserção dos dados na tabela.
+
+## Bibliotecas Utilizadas
+
+- **boto3**: SDK da Amazon para Python que manipula recursos da AWS.
+  
+- **BytesIO (da biblioteca io)**: Interface para sequências de bytes que facilita manipulação de arquivos do S3 como arquivos em memória.
+
+- **psycopg2**: Biblioteca para conexão com PostgreSQL que permite interação com instâncias Redshift.
+  
+- **sys**: Biblioteca embutida do Python para interagir com o interpretador e passar argumentos de linha de comando.
+  
+- **getResolvedOptions (da biblioteca awsglue.utils)**: Função do SDK do AWS Glue que recupera parâmetros de um GlueJob.
