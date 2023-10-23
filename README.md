@@ -4,7 +4,7 @@
 
 Este projeto consiste em desenvolver uma pipeline ETL na AWS para preparar um conjunto de dados destinado à modelagem de machine learning. A pipeline foi desenvolvida utilizando serviços da AWS, incluindo Glue, S3, CloudWatch, IAM e Redshift.
 
-## Framework de Solução
+## Desenvolvimento da Solução
 
 ### 1. Entendimento do Problema - [Notebook](https://github.com/cinthialet/etl-aws-pipeline/blob/main/transformacao_dados_aws.ipynb)
 
