@@ -37,9 +37,11 @@ Configuração dos recursos na AWS necessários para a execução da pipeline.
 ### 7. Teste da Solução - [Vídeo do teste](https://www.youtube.com/watch?v=U8mbIapwUy4)
 
 Testes end-to-end para garantir que a pipeline está funcionando corretamente e os dados são transformados e armazenados conforme esperado no Amazon Redshift.
-Este vídeo é a parte 3 de uma playlist explicando o desenvolvimento do projeto. Abaixo, as outras partes :
-- [PARTE 1](https://www.youtube.com/watch?v=a1faKmcerBw)
-- [PARTE 2](https://www.youtube.com/watch?v=8C3lr3TETu8)
+Este vídeo é a parte 3 de uma playlist explicando o desenvolvimento do projeto. Abaixo, a playlist completa :
+- [PARTE 1](https://www.youtube.com/watch?v=a1faKmcerBw) - Apresentação do projeto no GitHub
+- [PARTE 2](https://www.youtube.com/watch?v=8C3lr3TETu8) - Desenvolvimento no notebook Colab
+- [PARTE 3](https://www.youtube.com/watch?v=U8mbIapwUy4) - Teste end-to-end na Cloud AWS
+
 
 # Arquitetura AWS para ETL Pipeline
 
